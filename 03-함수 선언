@@ -1,0 +1,24 @@
+package ddwu.mobile.week02.kotlintest
+
+fun myPower01 (value : Int) : Int {                    //함수 기본
+    return value * value
+}
+
+fun myAdd (value : Int) : Unit{                       //매개변수 변경 금지
+    //value = 10
+}
+
+fun myDefault (value : Int = 1) : Int {               //매개변수 디폴트값
+    return value * value
+}
+
+fun mySelection (value01 : Int, value02 : Int) : Unit{  //매개변수 지정
+    print("add == ${value01 + value02}")
+}
+
+fun main(){
+    println("${myDefault()} ${myDefault(10)}")
+    println("${mySelection(1, 2)} ${mySelection(value02 = 1, value01 = 2)}")
+}
+
+/*fun 함수명 (매개변수명: 타입[]) : 반환타입 {함수 본체}*/
