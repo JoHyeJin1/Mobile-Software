@@ -1,0 +1,19 @@
+package ddwu.mobile.week02.kotlintest
+
+class MyClass (var dept: String){
+
+    init{
+     this.dept = dept
+    }
+
+    fun getDept(){
+        println(dept)
+    }
+}
+
+fun main(){
+    val myObject : MyClass = MyClass("test")
+    myObject.getDept()
+}
+
+//class MyClass (var dept: String) 멤버변수 바로 만들어 줄 수 있다.
