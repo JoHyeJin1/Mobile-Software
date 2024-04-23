@@ -1,0 +1,15 @@
+package ddwu.mobile.week02.kotlintest
+
+fun main(){
+
+    fun higherOrderFunc () : (String) -> Unit {
+        return{ grade ->
+            println("Dept: Computer")
+            println("Subject: Mobile Software")
+            println("Grade: $grade")
+        }
+    }
+
+    val returnedFunc = higherOrderFunc()
+    returnedFunc("A")
+}
