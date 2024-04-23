@@ -1,0 +1,12 @@
+package ddwu.mobile.week02.kotlintest
+
+val data01 : Int = 1234
+var data02 = 5
+
+fun main(){
+    val data01: Int
+    var data03: String
+    data01 = 4321
+    data03 = "SomSom"
+    println("Hello World!!! $data01 $data03")
+}
