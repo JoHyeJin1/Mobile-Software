@@ -1,0 +1,21 @@
+package ddwu.mobile.week02.kotlintest
+
+fun main(){
+
+    print("키를 입력하시오. (cm 단위): ")
+    val height = readLine()!!.toFloat()
+    print("몸무게를 입력하시오. (kg 단위): ")
+    val weight = readLine()!!.toFloat()
+
+    val meterHeight = (height / 100)
+    val bmi = weight / (meterHeight * meterHeight)
+
+    val result = when(bmi){
+        in 0.0 .. 18.5 -> "저체중"
+        in 18.5..23.0 -> "정상"
+        in 23.0..25.0 -> "과체중"
+        else -> "비만"
+    }
+
+    println("키 ${height}cm, 몸무게 ${weight}kg의 BMI 지수는 ${bmi}이며 ${result}입니다.")
+}
