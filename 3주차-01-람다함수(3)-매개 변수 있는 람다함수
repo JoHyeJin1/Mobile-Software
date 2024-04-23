@@ -1,0 +1,16 @@
+package ddwu.mobile.week02.kotlintest
+
+fun function (num : Int) : Int{
+    println(num)
+    return num + 10
+}
+
+fun main(){
+    val lambdaWithParm = {num : Int ->
+        println(num)
+        num + 10
+    }
+
+    val result = lambdaWithParm(5)
+    println("$result")
+}
