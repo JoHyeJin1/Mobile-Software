@@ -3,7 +3,7 @@ package ddwu.mobile.week02.kotlintest
 class MyClass {
     var dept : String                                                //멤버변수
 
-    constructor(dept : String){                                      //생성자
+    constructor(dept : String){                                      //생성자 (부생성자)
         this.dept = dept
     }
 
