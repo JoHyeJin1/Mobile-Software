@@ -1,0 +1,33 @@
+package ddwu.mobile.week02.kotlintest
+
+class MyClass (var dept: String){
+
+    init{
+        this.dept = dept
+    }
+
+    constructor(dept: String, name: String) : this(dept){                     //보조 생성자
+        println("$dept - $name")
+    }
+
+    fun getDept(){
+        println(dept)
+    }
+}
+
+fun main(){
+    val myObject : MyClass = MyClass("computer", "mobile")
+    myObject.getDept()
+}
+
+/*
+보조 생성자
+  -주생성자 이외의 생성자
+  -class body 부분에 constructor 키워드로 선언
+  -주생성자를 명시적으로 구현할 경우 반드시 보조생성자에서 주생성자(최종적으로) 호출 - : this(dept)
+
+실행 순서
+  -init
+  -보조 생성자
+  -getDept()
+*/
