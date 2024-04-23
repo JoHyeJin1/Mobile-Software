@@ -1,0 +1,22 @@
+package ddwu.mobile.week02.kotlintest
+
+fun main(){
+    val value = 10
+    if(value > 10){
+        println("Up")
+    }else{
+        println("Down")
+    }
+    
+    val result : Boolean = if(value > 5){
+        true
+    }else{
+        false
+    }
+    
+    println("result: $result")
+}
+
+/*
+result에 if 문이 끝난 후의 결과 값이 저장 된다.
+*/
