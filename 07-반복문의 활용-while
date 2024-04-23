@@ -1,0 +1,10 @@
+package ddwu.mobile.week02.kotlintest
+
+fun main(){
+    while(true){
+        print("Input a number (0 for exit): ")
+        val inputData = readLine()?.toInt()
+        if(inputData != 0) continue
+        else break
+    }
+}
