@@ -1,0 +1,64 @@
+package ddwu.mobile.week02.kotlintest
+
+open class SuperClass {
+    init{
+        println("Super class")
+    }
+    open fun memberF(){
+        println("super function")
+    }
+}
+
+class SubClass : SuperClass(){
+    init{
+        println("Sub class")
+    }
+
+    override fun memberF(){
+        println("super function")
+    }
+}
+
+fun main(){
+    val sub = SubClass()
+    sub.memberF()
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+package ddwu.mobile.week02.kotlintest
+
+open class SuperClass {
+    var memberVal01 = 1
+    open var memberVar02 = 2
+    fun memberFun01(){
+        println("super01!")
+    }
+
+    open fun memberFun02(){
+        println("super02!")
+    }
+}
+
+class SubClass : SuperClass(){
+    override var memberVar02 = 3
+    override fun memberFun02(){
+        println("sub02!")
+    }
+}
+
+fun main(){
+    val sub = SubClass()
+    sub.memberFun02()
+}
+
+
+
+
+/*
+멤버의 재정의(Overriding)
+  -open으로 선언한 멤버만 재정의 가능
+  -재정의하는 항목은 override 키워드 표시
+  -접근제어지정
+    -public/protected/private
+    -Internal: 같은 모듈 허용
+*/
