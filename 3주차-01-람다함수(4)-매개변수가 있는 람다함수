@@ -1,0 +1,11 @@
+package ddwu.mobile.week02.kotlintest
+
+val lambdaFunc : (Int, String) -> Unit = { num : Int, str : String ->
+    println(num * num)
+    println(str)
+}
+
+/*
+(Int, String)          //람다함수 Type : 생략 가능
+num : Int, str : String  //람다함수 Type이 있을 경우 생략 가능
+*/
