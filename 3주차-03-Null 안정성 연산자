@@ -1,0 +1,13 @@
+package ddwu.mobile.week02.kotlintest
+
+fun main(){
+
+    val str: String? = null
+    println(str?.length)
+}
+
+/*
+객체가 null인 상태에서 사용할 때 발생하는 NullPointerException을 예방하기 위해 사용
+[타입?]연산자 : 변수 선언 시 null 할당가능한 변수로 선언하고자 할 때 사용
+[객체?.멤버] 연산자 : 객체가 null 상태일 경우 null이라는 상수 값으로 대체
+*/
