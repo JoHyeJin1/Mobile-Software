@@ -1,9 +1,9 @@
 package ddwu.mobile.week02.kotlintest
 
 
-var data01 : Int = 10
-var data02 : Int? = null
-var data03 : Any = "20"
+var data01 : Int = 10            //변수 선언
+var data02 : Int? = null        //null 대입 가능
+var data03 : Any = "20"         //Any를 사용하여 문자열 저장
 
 fun main(){
     var data04 = data01.toFloat()
