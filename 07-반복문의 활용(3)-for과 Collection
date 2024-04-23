@@ -1,0 +1,19 @@
+package ddwu.mobile.week02.kotlintest
+
+fun main(){
+    val data = intArrayOf(1, 2, 3, 4, 5)
+
+    for (value in data) print("$value ")
+    println()
+    for(index in data.indices){
+        println("index: $index value: ${data[index]}")
+    }
+    for((index, value) in data.withIndex()){
+        println("[$index] : $value")
+    }
+}
+
+/*
+indecies: Collection의 index 집합
+withIndex(): index와 value를 함께 반환
+*/
