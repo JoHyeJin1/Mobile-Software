@@ -1,0 +1,17 @@
+package ddwu.mobile.week02.kotlintest
+
+fun main(){
+    for(i in 1..10) print("$i ")
+    println()
+    for(i in 1 until 10) print("$i ")
+    println()
+    for(i in 1..10 step 3) print("$i ")
+    println()
+    for(i in 10 downTo 2) print("$i ")
+}
+
+/*
+in 1..10     -> 1 <= i <= 10
+in 1 until 10 -> 1 <= i < 10
+in 10 downTo 2 -> 10 9 8 7 6 5 4 3 2
+*/
