@@ -61,4 +61,6 @@ fun main(){
   -주생성자: class 선언부에 선언
   -constructor 키워드 생략 가능
   -주생성자 생략 -> 매개 변수가 없는 주생성자 자동 생성
+  -init() : 주생성자 body
+  -var dept : String // init{}가 있을 경우 초기화 생략 가능
 */
