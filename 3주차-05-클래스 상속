@@ -1,0 +1,22 @@
+package ddwu.mobile.week02.kotlintest
+
+open class SuperClass {
+    init{
+        println("Super class")
+    }
+}
+
+class SubClass : SuperClass(){
+    init{
+        println("Sub class")
+    }
+}
+
+fun main(){
+    val sub = SubClass()
+}
+
+
+/*
+open 클래스만 상속 가능
+*/
