@@ -5,3 +5,6 @@ fun main(){
     val lambdaNoParam = {-> println("lambda!")}
     lambdaNoParam()
 }
+
+
+/*변수를 선언 했는데, 중괄호가 나와서 함수를 선언하면 람다함수라고 보면 된다.*/
