@@ -1,0 +1,15 @@
+package ddwu.mobile.week02.kotlintest
+
+val myArray : Array<Int> = Array(3, {0})
+
+fun main(){
+    println("${myArray[0]}, ${myArray.get(0)}")
+    myArray[1] = 10
+    myArray.set(2, 20)
+    println("${myArray[1]}, ${myArray.get(2)}")
+}
+
+/*
+get/set 사용 가능
+[] 사용 권장
+*/
