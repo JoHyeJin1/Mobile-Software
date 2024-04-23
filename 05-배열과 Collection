@@ -1,0 +1,24 @@
+package ddwu.mobile.week02.kotlintest
+
+val myList01 : List<Int> = List(3, {0})
+val myList02 = listOf(1, 2, 3)
+val myMuList01 : MutableList<Int> = MutableList(3, {0})
+val myMuList02 = mutableListOf<Int>(1, 2, 3)
+
+fun main(){
+    //myList01[0] = 10 //오류 발생
+    myMuList01[0] = 10
+    myMuList01.add(4)
+    myMuList02.set(0, 10)
+    println("${myMuList01} ${myMuList02}")
+}
+
+/*
+기본 Collection: List, Set, Map
+Collection: 저장공간 크기의 실행 중 변경이 가능
+  -List: 순서 있는 컬렉션, 값 중복 허용
+  -Set: 순서 없는 컬렉션, 값 중복 불가
+  -Map: key와 value의 집합으로 구성, key로 value 접근
+
+가변타입(mutable~)과 불변타입으로 구분
+*/
