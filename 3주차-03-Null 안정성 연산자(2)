@@ -1,0 +1,15 @@
+package ddwu.mobile.week02.kotlintest
+
+fun main(){
+
+    var str: String? = "Mobile"
+    println(str?.length ?: 0)
+    str = null
+    println(str?.length ?:0)
+}
+
+/*
+[값 ?:0] 연산자
+  -엘비스 연산자
+  -[값] 부분이 NullPointerException이 발생하지 않는 경우에는 [값] 사용, 발생할 경우 [대체값] 사용
+*/
