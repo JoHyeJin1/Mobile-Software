@@ -1,0 +1,35 @@
+package ddwu.mobile.week02.kotlintest
+
+data class Subject(val title: String, var credit: Int)
+
+fun main(){
+    val subject1 = Subject("mobile", 3)
+    val subject2 = Subject("mobile", 3)
+
+    println("${subject1}")
+    println("${subject1.equals(subject2)}")
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+package ddwu.mobile.week02.kotlintest
+
+data class Subject(val title: String, var credit: Int){
+    override fun equals(other: Any?): Boolean {
+        return this.title == (other as Subject).title
+    }
+}
+
+fun main(){
+    val subject1 = Subject("mobile", 3)
+    val subject2 = Subject("mobile", 3)
+
+    println("${subject1}")
+    println("${subject1.equals(subject2)}")
+}
+
+/*
+data 클래스
+  -상수값을 보관하는 용도로 사용하는 클래스
+  -VO(Value Object) 또는 DTO(Data Transfer Object)
+  -toString(), equals() 등이 자동으로 구현됨
+*/
