@@ -1,0 +1,5 @@
+package ddwu.mobile.week02.kotlintest
+
+fun main(){
+    println("Hello World!!!")
+}
