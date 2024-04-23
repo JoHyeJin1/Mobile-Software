@@ -1,0 +1,13 @@
+package ddwu.mobile.week02.kotlintest
+
+fun main(){
+
+    var str: String? = null
+    println(str!!.length ?:0)
+}
+
+/*
+[값!!] 연산자
+  -[값] 부분이 null일 경우 NullPointerException 발생
+  -개발자가 예외 상태를 확인할 필요
+*/
