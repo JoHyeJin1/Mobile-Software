@@ -1,0 +1,12 @@
+package ddwu.mobile.week02.kotlintest
+
+val myValue : Int = 10
+var myValue01 = 5
+
+fun main(){
+    val newValue : Int
+    println("Hello World!!!")
+}
+
+//전역 변수로 선언 했을 경우에는 무조건 초기화를 시켜주어야 한다.
+//지역 변수는 초기화 하지 않는 것도 가능
