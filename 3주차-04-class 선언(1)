@@ -1,0 +1,23 @@
+package ddwu.mobile.week02.kotlintest
+
+class MyClass {
+    var dept : String                                                //멤버변수
+
+    constructor(dept : String){                                      //생성자
+        this.dept = dept
+    }
+
+    fun getDept(){                                                   //멤버함수
+        println(dept)
+    }
+}
+
+fun main(){
+    val myObject : MyClass = MyClass("computer")                    //객체 생성
+    myObject.getDept()
+}
+
+/*
+MyClass에서 생성자 constructor 주석 처리하면 var dept : String 오류 남. (초기화가 안 되어 있기 때문)
+생성자가 있을 경우 바로 초기화 해 주지 않아도 괜찮다.
+*/
