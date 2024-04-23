@@ -1,0 +1,7 @@
+package ddwu.mobile.week02.kotlintest
+
+
+fun main(){
+    val lambdaNoParam = {-> println("lambda!")}
+    lambdaNoParam()
+}
