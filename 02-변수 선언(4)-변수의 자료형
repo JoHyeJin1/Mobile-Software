@@ -1,0 +1,37 @@
+package ddwu.mobile.week02.kotlintest
+
+
+var data01 : Int = 10
+var data02 : Int? = null
+var data03 : Any = "20"
+
+fun main(){
+    var data04 = data01.toFloat()
+    println("$data01, {$data02}, $data03, $data04")
+}
+
+fun myFunction01 () : Unit{
+    println("myFunction01")
+}
+
+fun myFunction02 () : Nothing? {
+    return null
+}
+
+fun myFunction03 () : Nothing {
+    throw Exception()
+}
+
+/*
+기본: Int, Short, Long, Double, Byte, Boolean, Char
+기본적으로 null 대입 불가
+  -변수 선언 시 ? 를 기록하여 null 대입 가능
+
+문자열 String
+  -"일반 문자열" 또는 """띄어쓰기/탭/줄바꿈이 그대로 표현"""
+
+Any, Unit, Nothing 자료형
+  -Any: 모든 객체의 최상위 타입 - Java의 Object
+  -Unit: 반환타입이 없음을 표시 - Java의 void와 유사
+  -Nothing: null 또는 Exception 반환 표시 (null의 경우 ? 사용)
+*/
