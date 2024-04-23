@@ -1,8 +1,15 @@
 package ddwu.mobile.week02.kotlintest
 
+fun function (num : Int) : Int{
+    return num + 10
+}
 
 fun main(){
     val lambdaWithParam = {num1: Int -> num1 + 10}
     val result = lambdaWithParam(10)
     println(result)
 }
+
+/*
+function 함수와 main함수는 같은 역할을 한다.
+*/
