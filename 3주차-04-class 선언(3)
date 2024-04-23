@@ -17,3 +17,4 @@ fun main(){
 }
 
 //class MyClass (var dept: String) 멤버변수 바로 만들어 줄 수 있다.
+//class MyClass (dept: String) 매개변수를 받는 것으로 해석.
