@@ -1,0 +1,25 @@
+package ddwu.mobile.week02.kotlintest
+
+fun main(){
+    val nameFunc : () -> Unit = {
+        println("SomSom!")
+    }
+
+    val subjectFunc : () -> Unit = {
+        val subjectName = "Mobile software"
+        println(subjectName)
+    }
+
+    fun higherOrderFunc (argFunc : () -> Unit){
+        println("Dept: Computer")
+        argFunc()
+    }
+
+    higherOrderFunc(nameFunc)
+    higherOrderFunc(subjectFunc)
+}
+
+/*
+val subjectFunc : () -> Unit     //매개변수/반환타입이 없는 함수
+fun higherOrderFunc (argFunc : () -> Unit)     //매개변수/반환타입이 없는 함수를 매개변수로 전달 받음
+*/
