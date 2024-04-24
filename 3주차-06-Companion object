@@ -1,0 +1,19 @@
+package ddwu.mobile.week02.kotlintest
+
+class MyClass(var data: Int){
+    companion object{
+        var coData = 5
+    }
+}
+
+fun main(){
+
+    println(MyClass.coData)
+    
+    val myObject = MyClass(10)
+    println(myObject.data)
+}
+
+/*
+companion object -> Java에서 static 역할을 해 줌
+*/
