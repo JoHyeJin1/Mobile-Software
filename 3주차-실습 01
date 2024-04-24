@@ -1,0 +1,17 @@
+package ddwu.mobile.week02.kotlintest
+
+data class RegDate(val year: Int, val month: Int, val day: Int){
+    override fun equals(other: Any?): Boolean {
+        return this.year == (other as RegDate).year
+    }
+}
+
+fun main(){
+    val day01 = RegDate(2024,1,1)
+    val day02 = RegDate(2024, 1,3)
+
+    println(day01)
+    println(day02)
+
+    println(day01.equals(day02))
+}
